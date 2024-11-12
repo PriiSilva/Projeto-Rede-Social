@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Remove espaçamento padrão e configura o box-sizing para incluir bordas e padding */
+}
+
+body {
+    font-family: 'Constantia';
+    background-color: #f0f4f8; /* Define o fundo da página */
+    margin: 0;
+}
+
+.container {
+    display: flex; /* Define layout flexível para o container */
+    width: 100%;
+    min-height: 100vh; /* Define altura para ocupar toda a tela */
+}
+
+/* Sidebar Esquerdo */
+.sidebar-esquerda {
+    width: 250px; 
+    background-color: #ffffff; 
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Cor do texto do logo */
+    margin-bottom: 30px; /* Espaço abaixo do logo */
+}
+
+.menu {
+    display: flex;
+    flex-direction: colum;
+    gap: 15px;
+}
+
+.menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-home.active {
+    color: #000000; /* Cor mais escura para item ativo */
+    font-weight: bold; /* Texto em negrito para item ativo */
+}
+
+
+/* Conteúdo Central */
+.conteudo-central {
+    flex-grow: 2;
+    padding: 20px;
+    background-color: #3b8eed; /* Cor de fundo para o conteúdo central */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos para as extremidades */
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.pesquisar {
+    width: 60%; /* Largura da barra de busca */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Arredonda as bordas */
+}
+
+.informação-usuario {
+    display: flex;
+    align-items: center; /* Alinha texto e imagem verticalmente */
+}
+
+.informação-usuario span {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column;
+}
+
+.aviso-principal {
+    background-color: #eef2ff; /* Fundo azul claro */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aviso-principal h1 {
+    font-size: 24px;
+    color: #000000; /* Cor do título */
+}
+
+.acessar {
+    padding: 10px 20px;
+    background-color: #2174d4; /* Cor de fundo do botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continue-navegando {
+    margin-bottom: 20px;
+}
+
+.continue-navegando h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #000000;
+}
+
+/* Estilo para lista de posts */
+.lista-post {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.post-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post-item h3 {
+    font-size: 18px;
+    color: #000000;
+    margin: 0;
+}
+
+.post-item p {
+    font-size: 15px;
+    color: #000000;
+}
+
+.post-item .post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* Estilo para os botões de ações abaixo do post */
+.post-actions {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.post-actions button {
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.post-actions button:hover {
+    color: #7367f0;
+}
+
+/* Sidebar Direito */
+.sidebar-direita {
+    width: 250px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.seção-contatos {
+    margin-top: 50px;
+}
+
+.lista-contatos {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.lista-contatos li {
+    font-size: 16px;
+    padding: 10px 0;
+    color: #000000;
+}

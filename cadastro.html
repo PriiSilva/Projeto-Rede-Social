@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style_cadastro.css">
+</head>
+<body>
+
+    <h1 class="ocean">OCEAN</h1>
+    
+    <form action="cadastro.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="nome_usuario" placeholder="Nome de Usuário" required> <br> <br>
+        <input type="text" name="nome_completo" placeholder="Nome Completo" required> <br> <br>
+        <input type="email" name="email" placeholder="Email de Usuário" required> <br> <br>
+        <input type="password" name="senha" placeholder="Digite sua senha" required> <br> <br>
+        <input type="password" name="senha2" placeholder="Confirme sua senha" required> <br> <br>
+        
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required> <br> <br>
+        
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero">
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="outro">Outro</option>
+        </select> <br> <br>
+        
+        <label for="imagem_perfil">Imagem de Perfil:</label>
+        <input type="file" id="imagem_perfil" name="imagem_perfil" accept="image/*"> <br> <br>
+
+        <textarea name="biografia" placeholder="Escreva algo sobre você..." rows="3"></textarea> <br> <br>
+        <input type="text" name="localizacao" placeholder="Localização"> <br> <br>
+        
+        <label>
+            <input type="checkbox" name="termos" required>
+            Eu concordo com os <a href="#termos">Termos de Uso</a> e a <a href="#privacidade">Política de Privacidade</a>.
+        </label> <br> <br>
+        
+        <input type="submit" name="cadastrar" value="Cadastrar"> <br> <br>
+    </form>
+</body>
+</html>
